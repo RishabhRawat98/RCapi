@@ -35,10 +35,17 @@ URL: https://RCapi.net - has some information about the website and how it works
 
 
 /house/		Get     action- show 
-should recieve a code 2, something likke 
+should recieve a code 2, so 200 ok
 
+for invalid entries, recieve a code 400 bad request
+
+for server error, expect 500 
 
 
 
 
 /nbhood/	Get 	action-show
+
+if request accepted get 200
+else if bad request 400
+else 500 
